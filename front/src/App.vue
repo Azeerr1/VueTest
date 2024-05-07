@@ -206,8 +206,8 @@ body{
     overflow:hidden;
     .fade{
     position:absolute;
-    background:linear-gradient(90deg,rgba(13, 14, 14, 0.8), transparent 30%, transparent 70%,
-    rgba(13, 14, 14, 0.8));
+    background:linear-gradient(90deg,rgba(23, 16, 31, 1), transparent 20%, transparent 80%,
+    rgba(18, 12, 38, 1));
     inset:0;
     pointer-events: none;
     }
