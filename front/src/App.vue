@@ -71,8 +71,8 @@
             <div class="case4-content">
                 <div class="spec">
                   <div class="test"><img src="./assets/mb.png" alt="carte-mère" class="icon">B450 Tomahawk</div>
-                  <div class="test"><img src="./assets/cpu.png" alt="Processeur" class="icon">AMD Ryzen 5 3600</div>
-                  <div class="test"><img src="./assets/gpu.png" alt="Carte-graphique" class="icon">NVIDIA RTX 2060</div>
+                  <div class="test"><img src="./assets/cpu.png" alt="Processeur" class="icon">Ryzen 9 3900XT</div>
+                  <div class="test"><img src="./assets/gpu.png" alt="Carte-graphique" class="icon">Quadro P2000</div>
                 </div>
                 <div class="bouger"><img src="./assets/opti.png" alt="opti"></div>
                 <div class="spec">
@@ -269,14 +269,14 @@ body{
         }
         .typing{
           overflow:hidden;
-          animation:typing 5s steps(150, end) forwards;
+          animation:typing 4s steps(150, end) forwards;
         }
         @keyframes typing{
           0% { width:0%; }
           100% { width:100%; }
         }
         .typing-delay{
-          animation-delay:5s;
+          animation-delay:4s;
           width:0%;
         }
         .case1-text{
