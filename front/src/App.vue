@@ -414,7 +414,7 @@ body{
   display:flex;
   flex-direction: column;
   width:800px;
-  height:auto;
+  height:100vh;
   gap:40px;
   .header{
     display:flex;
@@ -454,41 +454,42 @@ body{
   }
 
   .tag-list{
-    width:1200px;
-    font-family: 'Montserrat';
-    position:relative;
-    overflow:hidden;
-    .fade{
-    position:absolute;
-    background:linear-gradient(90deg,rgba(23, 16, 31, 1), transparent 20%, transparent 80%,
-    rgba(18, 12, 38, 1));
-    inset:0;
-    pointer-events: none;
-    }
-    .inner{
-      width:fit-content;
-      display:flex;
-      gap:1rem;
-      animation: loop 30s linear infinite;
-      .tag{
+      width:800px;
+      font-family: 'Montserrat';
+      position:relative;
+      overflow:hidden;
+      .fade{
+      position:absolute;
+      background:linear-gradient(90deg,rgba(23, 16, 31, 1), transparent 20%, transparent 80%,
+      rgba(18, 12, 38, 1));
+      inset:0;
+      pointer-events: none;
+      }
+      .inner{
+        width:fit-content;
         display:flex;
-        align-items: center;
-        gap:0 0.2rem;
-        font-size:0.9rem;
-        background-color: rgba(231, 231, 231, 0.8);
-        padding: 0.7rem 1rem;
-        border-radius: 0.4rem;
-        box-shadow: 
-            0 0.1rem 0.2rem #00000033,
-            0 0.1rem 0.5rem #0000004d,
-            0 0.2rem 1.5rem #00000066;
-        .span{
-          font-size:1.2rem;
+        gap:1rem;
+        animation: loop 30s linear infinite;
+        .tag{
+          display:flex;
+          align-items: center;
+          gap:0 0.2rem;
+          font-size:0.9rem;
+          background-color: rgba(231, 231, 231, 0.8);
+          padding: 0.7rem 1rem;
+          border-radius: 0.4rem;
+          box-shadow: 
+              0 0.1rem 0.2rem #00000033,
+              0 0.1rem 0.5rem #0000004d,
+              0 0.2rem 1.5rem #00000066;
+          .span{
+            font-size:1.2rem;
+          }
         }
       }
     }
   }
-  }
+  
 .main-content{
     display:flex;
     justify-content: center;
@@ -496,10 +497,10 @@ body{
     .content{
       display:flex;
       flex-direction: column;
-      width:max-content;
+      width:700px;
       gap:40px;
       .case1{
-        width:max-content;
+        width:700px;
         height:450px;
         .case1-gap{
           display: flex;
@@ -508,7 +509,7 @@ body{
           align-items: center;
         }
         .case1-titre{
-          font-size:30px;
+          font-size:40px;
         }
         .typing{
           overflow:hidden;
@@ -524,6 +525,7 @@ body{
         }
         .case1-text{
           font-size:25px;
+          text-wrap:wrap;
         }
       }
     }
