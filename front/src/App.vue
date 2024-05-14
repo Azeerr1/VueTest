@@ -75,7 +75,7 @@
                   <div class="test"><img src="./assets/gpu.png" alt="Carte-graphique" class="icon">Quadro P2000</div>
                 </div>
                 <div class="bouger"><img src="./assets/opti.png" alt="opti"></div>
-                <div class="spec">
+                <div class="spec2">
                   <div class="test"><img src="./assets/ram.png" alt="Mémoire" class="icon">64 GB DDR4</div>
                   <div class="test"><img src="./assets/hdd.png" alt="Stockage" class="icon">36 TB of storage</div>
                   <div class="test"><img src="./assets/os.png" alt="Os" class="icon">Unraid OS</div>
@@ -417,6 +417,28 @@ body{
               height:60px;
             }
           }
+          .spec2{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            color:white;
+            font-family:'Montserrat';
+            font-size:20px;
+            gap:40px;
+            .test {
+              display:flex;
+              align-items: center;
+              gap:20px;
+            }
+            .icon{
+              display:flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width:60px;
+              height:60px;
+            }
+          }
           .bouger img {
             width: 25rem;
             transform: translateY(0px);
@@ -686,6 +708,28 @@ body{
               height:60px;
             }
           }
+          .spec2{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            color:white;
+            font-family:'Montserrat';
+            font-size:25px;
+            gap:40px;
+            .test {
+              display:flex;
+              align-items: center;
+              gap:20px;
+            }
+            .icon{
+              display:flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width:60px;
+              height:60px;
+            }
+          }
           .bouger img {
             width: 25rem;
             transform: translateY(0px);
@@ -703,7 +747,7 @@ body{
   .main{
   display:flex;
   flex-direction: column;
-  width:230px;
+  width:100vw;
   height:100vh;
   gap:40px;
   .header{
@@ -723,24 +767,24 @@ body{
         align-items: center;
         background-color: rgba(202, 201, 202, 0.8);
         border-radius:10px;
-        width: 100px;
-        height: 60px;
+        width: 200px;
+        height: 80px;
         gap:5px;
         .logo-inf{
-          width:15px;
-          height:15px;
+          width:20px;
+          height:20px;
           cursor:pointer;
         }
       }
     }
     .logo{
-      width:70px;
-      height:70px;
+      width:100px;
+      height:100px;
       border-radius:100px;
     }
     .logo-text{
       font-family:'Montserrat';
-      font-size:16px;
+      font-size:25px;
     }
     .logo-media{
       display:flex; 
@@ -749,7 +793,7 @@ body{
   }
 
   .tag-list{
-      width:200px;
+      width:400px;
       font-family: 'Montserrat';
       position:relative;
       overflow:hidden;
@@ -769,9 +813,9 @@ body{
           display:flex;
           align-items: center;
           gap:0 0.2rem;
-          font-size:0.5rem;
+          font-size:1rem;
           background-color: rgba(231, 231, 231, 0.8);
-          padding: 0.3rem 0.5rem;
+          padding: 0.5rem 0.7rem;
           border-radius: 0.4rem;
           box-shadow: 
               0 0.1rem 0.2rem #00000033,
@@ -792,20 +836,20 @@ body{
       .content{
         display:flex;
         flex-direction: column;
-        width:200px;
+        width:400px;
         gap:20px;
         .case1{
-          width:200px;
+          width:400px;
           height:250px;
           .case1-gap{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width:150px;
+            width:300px;
           }
           .case1-titre{
-            font-size:15px;
+            font-size:25px;
           }
           .typing{
             overflow:hidden;
@@ -816,61 +860,62 @@ body{
             100% { width:100%; }
           }
           .typing-delay{
-            animation-delay:0s;
+            animation-delay:4s;
             width:100%;
           }
           .case1-text{
-            font-size:10px;
+            font-size:15px;
             text-wrap:wrap;
           }
         }
         .case2{
           display:flex;
+          flex-direction: column;
           justify-content: center;
           background-color: rgba(13, 14, 14, 0.8);
           border-radius:30px;
-          height:520px;
+          height:550px;
           align-items:center;
           .case21{
             display:flex;
             flex-direction: column;
-            width:180px;
-            height:300px;
+            width:250px;
+            height:250px;
             border-radius:30px;
             gap:20px;
-            margin-top:0px;
+            margin-top:10px;
             .case3-titre{
-              font-size:15px;
+              font-size:20px;
               font-family:'Montserrat';
               color:#fff;
               text-decoration:underline;
               text-underline-offset:5px;
             }
             .logo{
-              margin-left:40px;
-              width:15px;
-              height:15px;
+              margin-left:10px;
+              width:20px;
+              height:20px;
             }
           }
           .case3{
             display:flex;
             flex-direction: column;
-            width:180px;
+            width:250px;
             height:250px;
             border-radius:30px;
             gap:20px;
-            margin-top:40px;
+            margin-top:20px;
             .case3-titre{
-              font-size:15px;
+              font-size:20px;
               font-family:'Montserrat';
               color:#fff;
               text-decoration:underline;
               text-underline-offset:5px;
             }
             .logo{
-              margin-left:40px;
-              width:15px;
-              height:15px;
+              margin-left:10px;
+              width:20px;
+              height:20px;
             }
           }
           .case-c{
@@ -878,11 +923,12 @@ body{
             justify-content: left;
             align-items: center;
             background-color:#340655;
-            height:30px;
+            width:250px;
+            height:35px;
             border-radius:10px;
             gap:20px;
             font-family: 'Montserrat';
-            font-size:10px;
+            font-size:15px;
             color:#ffffff;
             transition: 0s;
             &:hover{
@@ -895,11 +941,12 @@ body{
             justify-content: left;
             align-items: center;
             background-color:#121213;
-            height:30px;
+            width:250px;
+            height:35px;
             border-radius:10px;
             gap:20px;
             font-family: 'Montserrat';
-            font-size:10px;
+            font-size:15px;
             color:#ffffff;
             transition: 0s;
             &:hover{
@@ -910,14 +957,15 @@ body{
         }
         .case4{
         display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
         background-color: rgba(13, 14, 14, 0.8);
-        margin-top:50px;
+        margin-top:0px;
         border-radius:30px;
-        height:550px;
+        height:700px;
         flex-wrap: wrap;
+        gap:40px;
         .case4-titre{
           font-size:20px;
           font-family:'Montserrat';
@@ -925,23 +973,28 @@ body{
           text-decoration:underline;
           text-underline-offset:5px;
           margin-left:0px;
+          margin-top:50px;
         }
         .case4-content{
           display:flex;
           justify-content:space-evenly;
           flex-direction: column;
-          .spec{
+          align-items: center;
+          gap:20px;
+          .spec:nth-child(1){
             display:flex;
             flex-direction: column;
             justify-content: center;
             color:white;
             font-family:'Montserrat';
             font-size:10px;
-            gap:10px;
+            gap:15px;
+            order:1;
             .test {
               display:flex;
               align-items: center;
               gap:20px;
+              font-size:15px;
             }
             .icon{
               display:flex;
@@ -952,15 +1005,46 @@ body{
               height:40px;
             }
           }
-          .bouger img {
-            width: 10rem;
-            transform: translateY(0px);
-            animation: float 0s ease-in-out infinite;
+          .spec2:nth-child(3){
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            color:white;
+            font-family:'Montserrat';
+            font-size:10px;
+            gap:15px;
+            order:2;
+            .test {
+              display:flex;
+              align-items: center;
+              gap:20px;
+              font-size:15px;
+            }
+            .icon{
+              display:flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width:40px;
+              height:40px;
+            }
+          }
+          .bouger:nth-child(2){
+            order:3;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 200px;
+              transform: translateY(0px);
+              animation: float 0s ease-in-out infinite;
+            }
           }
         }
       }
     }
-
   }
   .footer{
     height:10px;
