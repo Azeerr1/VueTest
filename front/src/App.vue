@@ -7,7 +7,7 @@
           <img src="./assets/logo.png" alt="logo" class="logo">
           <div class="info">
             <div class="logo-text">Wicaebeth</div>
-              <div style="display:flex; gap:15px">
+              <div class="logo-media">
                 <img src="./assets/github.png" @click="OpenUrl('https://github.com/WicaebethTheo/')" alt="github" class="logo-inf">
                 <img src="./assets/twitter.png" @click="OpenUrl('https://twitter.com/Wicaebeth_')" alt="twitter" class="logo-inf">
                 <img src="./assets/discord.png" @click="OpenUrl('https://discordapp.com/users/257152912776495104')" alt="discord" class="logo-inf">
@@ -59,7 +59,7 @@
               <div class="case-c" @click="OpenUrl('https://emby.wicaebeth.fr/')"><img src="./assets/emby.png" alt="EMBY" class="logo">EMBY</div>
               <div class="case-c1" @click="OpenUrl('https://jellyfin.wicaebeth.fr/')"><img src="./assets/jellyfin.png" alt="JELLYFIN" class="logo">JELLYFIN</div>
             </div>
-            <div class="case3">
+            <div class="case21">
               <div class="case3-titre">SERVICES</div>
               <div class="case-c" @click="OpenUrl('https://wicaebeth.fr/opti/')"><img src="./assets/optimisation.png" alt="OPTIMISATION" class="logo">OPTIMISATION</div>
               <div class="case-c1" @click="OpenUrl('https://radar.wicaebeth.fr/')"><img src="./assets/radarr.png" alt="RADAR" class="logo">RADAR</div>
@@ -197,6 +197,10 @@ body{
       font-family:'Montserrat';
       font-size:40px;
     }
+    .logo-media{
+      display:flex; 
+      gap:15px;
+    }
   }
 
   .tag-list{
@@ -294,6 +298,27 @@ body{
         border-radius:30px;
         height:700px;
         flex-wrap: wrap;
+        .case21{
+          display:flex;
+          flex-direction: column;
+          width:400px;
+          height:700px;
+          border-radius:30px;
+          gap:50px;
+          margin-top:40px;
+          .case3-titre{
+            font-size:30px;
+            font-family:'Montserrat';
+            color:#fff;
+            text-decoration:underline;
+            text-underline-offset:20px;
+          }
+          .logo{
+            margin-left:40px;
+            width:50px;
+            height:50px;
+          }
+        }
         .case3{
           display:flex;
           flex-direction: column;
@@ -451,6 +476,10 @@ body{
       font-family:'Montserrat';
       font-size:40px;
     }
+    .logo-media{
+      display:flex; 
+      gap:15px;
+    }
   }
 
   .tag-list{
@@ -536,6 +565,27 @@ body{
           border-radius:30px;
           height:1200px;
           align-items:self-end;
+          .case21{
+            display:flex;
+            flex-direction: column;
+            width:400px;
+            height:500px;
+            border-radius:30px;
+            gap:50px;
+            margin-top:40px;
+            .case3-titre{
+              font-size:40px;
+              font-family:'Montserrat';
+              color:#fff;
+              text-decoration:underline;
+              text-underline-offset:20px;
+            }
+            .logo{
+              margin-left:40px;
+              width:50px;
+              height:50px;
+            }
+          }
           .case3{
             display:flex;
             flex-direction: column;
@@ -646,5 +696,275 @@ body{
     }
   }
 }
+}
+// Responsive Tel
+
+@media screen and (max-width: 480px) {
+  .main{
+  display:flex;
+  flex-direction: column;
+  width:230px;
+  height:100vh;
+  gap:40px;
+  .header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    .nav{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+      .info{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(202, 201, 202, 0.8);
+        border-radius:10px;
+        width: 100px;
+        height: 60px;
+        gap:5px;
+        .logo-inf{
+          width:15px;
+          height:15px;
+          cursor:pointer;
+        }
+      }
+    }
+    .logo{
+      width:70px;
+      height:70px;
+      border-radius:100px;
+    }
+    .logo-text{
+      font-family:'Montserrat';
+      font-size:16px;
+    }
+    .logo-media{
+      display:flex; 
+      gap:8px;
+    }
+  }
+
+  .tag-list{
+      width:200px;
+      font-family: 'Montserrat';
+      position:relative;
+      overflow:hidden;
+      .fade{
+      position:absolute;
+      background:linear-gradient(90deg,rgba(23, 16, 31, 1), transparent 20%, transparent 80%,
+      rgba(18, 12, 38, 1));
+      inset:0;
+      pointer-events: none;
+      }
+      .inner{
+        width:fit-content;
+        display:flex;
+        gap:0.5rem;
+        animation: loop 30s linear infinite;
+        .tag{
+          display:flex;
+          align-items: center;
+          gap:0 0.2rem;
+          font-size:0.5rem;
+          background-color: rgba(231, 231, 231, 0.8);
+          padding: 0.3rem 0.5rem;
+          border-radius: 0.4rem;
+          box-shadow: 
+              0 0.1rem 0.2rem #00000033,
+              0 0.1rem 0.5rem #0000004d,
+              0 0.2rem 1.5rem #00000066;
+          .span{
+            font-size:1.2rem;
+          }
+        }
+      }
+    }
+  
+
+    .main-content{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      .content{
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        gap:20px;
+        .case1{
+          width:200px;
+          height:250px;
+          .case1-gap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:150px;
+          }
+          .case1-titre{
+            font-size:15px;
+          }
+          .typing{
+            overflow:hidden;
+            animation:typing 0s steps(150, end) forwards;
+          }
+          @keyframes typing{
+            0% { width:100%; }
+            100% { width:100%; }
+          }
+          .typing-delay{
+            animation-delay:0s;
+            width:100%;
+          }
+          .case1-text{
+            font-size:10px;
+            text-wrap:wrap;
+          }
+        }
+        .case2{
+          display:flex;
+          justify-content: center;
+          background-color: rgba(13, 14, 14, 0.8);
+          border-radius:30px;
+          height:520px;
+          align-items:center;
+          .case21{
+            display:flex;
+            flex-direction: column;
+            width:180px;
+            height:300px;
+            border-radius:30px;
+            gap:20px;
+            margin-top:0px;
+            .case3-titre{
+              font-size:15px;
+              font-family:'Montserrat';
+              color:#fff;
+              text-decoration:underline;
+              text-underline-offset:5px;
+            }
+            .logo{
+              margin-left:40px;
+              width:15px;
+              height:15px;
+            }
+          }
+          .case3{
+            display:flex;
+            flex-direction: column;
+            width:180px;
+            height:250px;
+            border-radius:30px;
+            gap:20px;
+            margin-top:40px;
+            .case3-titre{
+              font-size:15px;
+              font-family:'Montserrat';
+              color:#fff;
+              text-decoration:underline;
+              text-underline-offset:5px;
+            }
+            .logo{
+              margin-left:40px;
+              width:15px;
+              height:15px;
+            }
+          }
+          .case-c{
+            display:flex;
+            justify-content: left;
+            align-items: center;
+            background-color:#340655;
+            height:30px;
+            border-radius:10px;
+            gap:20px;
+            font-family: 'Montserrat';
+            font-size:10px;
+            color:#ffffff;
+            transition: 0s;
+            &:hover{
+              background-color:#480975;
+              cursor: pointer;
+            }
+          }
+          .case-c1{
+            display:flex;
+            justify-content: left;
+            align-items: center;
+            background-color:#121213;
+            height:30px;
+            border-radius:10px;
+            gap:20px;
+            font-family: 'Montserrat';
+            font-size:10px;
+            color:#ffffff;
+            transition: 0s;
+            &:hover{
+              background-color:#161617;
+              cursor: pointer;
+           }
+          }
+        }
+        .case4{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(13, 14, 14, 0.8);
+        margin-top:50px;
+        border-radius:30px;
+        height:550px;
+        flex-wrap: wrap;
+        .case4-titre{
+          font-size:20px;
+          font-family:'Montserrat';
+          color:#fff;
+          text-decoration:underline;
+          text-underline-offset:5px;
+          margin-left:0px;
+        }
+        .case4-content{
+          display:flex;
+          justify-content:space-evenly;
+          flex-direction: column;
+          .spec{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            color:white;
+            font-family:'Montserrat';
+            font-size:10px;
+            gap:10px;
+            .test {
+              display:flex;
+              align-items: center;
+              gap:20px;
+            }
+            .icon{
+              display:flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width:40px;
+              height:40px;
+            }
+          }
+          .bouger img {
+            width: 10rem;
+            transform: translateY(0px);
+            animation: float 0s ease-in-out infinite;
+          }
+        }
+      }
+    }
+
+  }
+  .footer{
+    height:10px;
+  }
+  }
 }
 </style>
